@@ -132,8 +132,8 @@ resource "aws_eip_association" "eip-association" {
 }
 
 resource "aws_key_pair" "terraform" {
-  key_name = "terraform"
-  public_key = file("C:/Users/SADHREDD/.ssh/id_rsa.pub")
+  key_name = "ansible"
+  public_key = file(""C:/Users/devop/OneDrive/Desktop/ansible.pem"")
 }
 
 resource "aws_ebs_volume" "ec2-vol" {
